@@ -1,0 +1,7 @@
+/node_modules/**
+/.nuxt/**
+package-lock.json
+/.output/**
+/.vsode/**
+*.min.js
+src/client/public/unity/**

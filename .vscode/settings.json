@@ -1,0 +1,45 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.dragAndDrop": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "search.showLineNumbers": true,
+  "terminal.integrated.confirmOnExit": "always",
+  "terminal.integrated.copyOnSelection": true,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[csv]": {
+    "editor.wordWrap": "off"
+  },
+  "[log]": {
+    "editor.wordWrap": "off"
+  },
+  "[tsv]": {
+    "editor.insertSpaces": false,
+    "editor.wordWrap": "off"
+  },
+  "stylelint.validate": ["scss", "css", "vue"]
+}

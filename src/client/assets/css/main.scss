@@ -1,0 +1,66 @@
+@import './mixin/fonts';
+
+html {
+  font-size: variables.$font-size;
+}
+
+body {
+  .p-toast .p-toast-message .p-toast-message-content {
+    border-width: 0;
+  }
+
+  // remove triangle content
+  .p-overlaypanel:after,
+  .p-overlaypanel:before {
+    content: none;
+  }
+}
+
+body,
+.p-component,
+.p-link {
+  font-family: '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', 'YuGothic', 'ヒラギノ角ゴ ProN W3',
+    'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'verdana', sans-serif;
+}
+
+// Wrapper element styles of application
+.wrapper {
+  a {
+    color: var(--blue-500);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .p-checkbox .p-checkbox-box.p-highlight .p-checkbox-icon.pi-check:before {
+    top: 8px;
+    left: 2px;
+  }
+}
+
+// Markdown editor
+.editor-preview,
+.markdown-body {
+  ul {
+    list-style-type: disc;
+  }
+  ol {
+    list-style-type: decimal;
+  }
+}
+
+// Emoji picker dialog
+.emojipicker {
+  background: none;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  .p-dialog-content {
+    margin: 0;
+    background: none !important;
+  }
+}
+
+// pointer-events
+// prevent drag and drop etc
+.pointer-events-none {
+  pointer-events: none;
+}

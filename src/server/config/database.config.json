@@ -1,0 +1,18 @@
+{
+  "development": {
+    "storage": "./dev.sqlite",
+    "dialect": "sqlite"
+  },
+  "test": {
+    "storage": "./test.sqlite",
+    "dialect": "sqlite"
+  },
+  "prerender": {
+    "storage": "./test.sqlite",
+    "dialect": "sqlite"
+  },
+  "production": {
+    "storage": "./prod.sqlite",
+    "dialect": "sqlite"
+  }
+}

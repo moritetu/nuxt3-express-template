@@ -1,0 +1,31 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint",
+    "ms-azuretools.vscode-docker",
+    "mhutchie.git-graph",
+    "ms-ceintl.vscode-language-pack-ja",
+    "ms-kubernetes-tools.vscode-kubernetes-tools",
+    "ms-vscode.powershell",
+    "foxundermoon.shell-format",
+    "wayou.vscode-todo-highlight",
+    "bungcip.better-toml",
+    "redhat.vscode-yaml",
+    "redhat.vscode-xml",
+    "ms-vscode.cmake-tools",
+    "yzhang.markdown-all-in-one",
+    "csholmq.excel-to-markdown-table",
+    "yzane.markdown-pdf",
+    "vue.volar",
+    "alexcvzz.vscode-sqlite",
+    "formulahendry.vscode-mysql",
+    "ZixuanChen.vitest-explorer",
+    "bradlc.vscode-tailwindcss",
+    "stylelint.vscode-stylelint",
+    "arjun.swagger-viewer",
+    "42crunch.vscode-openapi",
+    "amazonwebservices.aws-toolkit-vscode",
+    "hashicorp.terraform"
+  ]
+}
