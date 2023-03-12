@@ -59,24 +59,6 @@ export default defineNuxtConfig({
   },
 
   vite: {
-    define: {
-      'process.env.DEBUG': false,
-    },
-
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: `
-            @use "@/assets/css/_variables.scss";
-            @use "primeflex/primeflex";
-`,
-        },
-      },
-    },
-    build: {
-      chunkSizeWarningLimit: 1000,
-    },
-
     plugins: [
       Icons({
         autoInstall: true,
@@ -109,14 +91,19 @@ export default defineNuxtConfig({
   },
 
   // https://nuxt-security.vercel.app/getting-started/configuration
-  security: {},
+  security: {
+    // Set disable to cause file upload error.
+    xssValidator: false,
+    headers: {
+      contentSecurityPolicy: {
+        value: {
+          'img-src': ["'self'", 'data:', 'blob:'],
+        },
+      },
+    },
+  },
 
   tailwindcss: {
     // use tailwind.config.js
-  },
-
-  vueuse: {
-    // Disable auto-import by vueuse not to application composables duplicate.
-    autoImports: false,
   },
 })
