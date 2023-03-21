@@ -1,6 +1,5 @@
 import express from 'express'
 import session from 'express-session'
-import lusca from 'lusca'
 import passport from 'passport'
 
 import routes from './routes'
@@ -27,9 +26,6 @@ function initializeApplication() {
   )
   app.use(passport.initialize())
   app.use(passport.session())
-  app.use(lusca.xframe('SAMEORIGIN'))
-  app.use(lusca.xssProtection(true))
-  app.use(lusca.nosniff())
 
   /**
    * Set app routes.

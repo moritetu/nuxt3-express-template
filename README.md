@@ -21,6 +21,19 @@ yarn dev:db:seed:all
 yarn dev
 ```
 
+http://localhost:3000/
+
+### Request Server API
+
+```bash
+$ curl http://localhost:3000/server/api/hello/say
+{"message":"Hello World"}
+```
+
+### Add Server Routes
+
+- `src/server/routes/index.ts`
+
 ### Run in producion mode
 
 ```bash

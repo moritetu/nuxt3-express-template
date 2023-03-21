@@ -10,7 +10,7 @@ const { data } = await useFetch<{ message: string }>('http://localhost:3000/serv
     </template>
     <template #footer>
       <Button icon="pi pi-check" label="Save" />
-      <Button icon="pi pi-times" label="Cancel" class="p-button-secondary" style="margin-left: 0.5em" />
+      <Button icon="pi pi-times" label="Cancel" severity="secondary" style="margin-left: 0.5em" />
     </template>
   </Card>
 </template>

@@ -1,5 +1,7 @@
 import Icons from 'unplugin-icons/vite'
 
+const isDev = process.env.NODE_ENV === 'development'
+
 export default defineNuxtConfig({
   typescript: {
     shim: false,
@@ -22,14 +24,10 @@ export default defineNuxtConfig({
   },
 
   css: [
-    // 'primevue/resources/themes/bootstrap4-light-blue/theme.css',
-    'primevue/resources/themes/saga-blue/theme.css',
-    // 'primevue/resources/themes/fluent-light/theme.css',
-    // 'primevue/resources/themes/mdc-light-indigo/theme.css',
+    'primevue/resources/themes/lara-light-blue/theme.css',
     'primevue/resources/primevue.css',
     'primeicons/primeicons.css',
     'primeflex/primeflex.css',
-    'easymde/dist/easymde.min.css',
     '@/assets/css/main.scss',
   ],
 
@@ -39,10 +37,6 @@ export default defineNuxtConfig({
     { route: '/server/api/**', handler: './src/server/index.ts' },
   ],
 
-  // See https://github.com/nuxt-modules/tailwindcss/issues/480
-  // Workaround because tailwindcss does not report an error.
-  watch: [],
-
   modules: [
     '@vueuse/nuxt',
     '@pinia/nuxt',
@@ -51,7 +45,6 @@ export default defineNuxtConfig({
     'unplugin-icons/nuxt',
     '@nuxtjs/device',
     'nuxt-security',
-    '@nuxtjs/google-fonts',
   ],
 
   build: {
@@ -76,22 +69,13 @@ export default defineNuxtConfig({
   // Module options
   //
 
-  googleFonts: {
-    download: true,
-    families: {
-      Inter: true,
-      'Zen Kaku Gothic New': true,
-    },
-  },
-
-  intlify: {},
-
   pinia: {
     disableVuex: true,
   },
 
   // https://nuxt-security.vercel.app/getting-started/configuration
   security: {
+    enabled: !isDev,
     // Set disable to cause file upload error.
     xssValidator: false,
     headers: {
